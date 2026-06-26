@@ -6,11 +6,81 @@
   <title>Simple Math</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <input id="first-number" type="text" placeholder="Enter the first number">
-  <input id="second-number" type="text" placeholder="enter the second number">
-  <p id="results"></p>
-  <p id="error"></p>
+  <div class="container">
+    <header class="header">
+      <div class="logo-container">
+        <i class="fa-solid fa-calculator"></i>
+      </div>
+      <div class="text-container">
+        <h1>Simple math</h1>
+        <p>Two-number calculator</p>
+      </div>
+    </header>
+    
+    <div class="input-container">
+      <label for="first-number">First number</label>
+      <input id="first-number" type="text" placeholder="Enter the first number">
+      
+      <label for="second-number">Second number</label>
+      <input id="second-number" type="text" placeholder="Enter the second number">
+    </div>
+    
+    <div class="display-container">
+      <div class="row">
+        <div class="icon-operation-wrapper">
+          <div class="symbol-container">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <span id="sum-operation"></span>
+        </div>
+        <div class="equal-result-wrapper">
+          <p>=</p>
+          <span id="sum"></span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="icon-operation-wrapper">
+          <div class="symbol-container">
+            <i class="fa-solid fa-minus"></i>
+          </div>
+          <span id="sub-operation"></span>
+        </div>
+        <div class="equal-result-wrapper">
+          <p>=</p>
+          <span id="sub"></span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="icon-operation-wrapper">
+          <div class="symbol-container">
+            <i class="fa-solid fa-x"></i>
+          </div>
+          <span id="mul-operation"></span>
+        </div>
+        <div class="equal-result-wrapper">
+          <p>=</p>
+          <span id="mul"></span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="icon-operation-wrapper">
+          <div class="symbol-container">
+            <i class="fa-solid fa-divide"></i>
+          </div>
+          <span id="div-operation"></span>
+        </div>
+        <div class="equal-result-wrapper">
+          <p>=</p>
+          <span id="div"></span>
+        </div>
+      </div>
+      <p id="error"></p>
+    </div>
+
+  </div>
 </body>
 </html>
+
