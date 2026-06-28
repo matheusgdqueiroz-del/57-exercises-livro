@@ -44,9 +44,9 @@ function calculate() {
     if (results !== null) {
         let [sum, sub, mul, div] = results;
         
-        sumDisplay.textContent = `${sum}`;
-        subDisplay.textContent = `${sub}`;
-        mulDisplay.textContent = `${mul}`;
+        sumDisplay.textContent = `${sum.toLocaleString("pt-br")}`;
+        subDisplay.textContent = `${sub.toLocaleString("pt-br")}`;
+        mulDisplay.textContent = `${mul.toLocaleString("pt-br")}`;
         if (div !== Infinity) {
             divDisplay.textContent = `${div.toFixed(2)}`;
         }else {
@@ -62,16 +62,4 @@ function calculate() {
     })
 })
 
-        // OperationDisplay.innerHTML = `
-        // <p>${xInput.value} + ${yInput.value}</p>
-        // <p>${xInput.value} - ${yInput.value}</p>
-        // <p>${xInput.value} x ${yInput.value}</p>
-        // <p>${xInput.value} / ${yInput.value}</p>
-        // `
-
-    //     else {
-    //     sumDisplay.textContent = "";
-    //     subDisplay.textContent = "";
-    //     mulDisplay.textContent = "";
-    //     divDisplay.textContent = "";
-    // }
+        
