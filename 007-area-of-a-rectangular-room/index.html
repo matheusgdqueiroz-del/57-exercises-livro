@@ -6,8 +6,68 @@
   <title>Area of a Rectangular Room</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   
+  <div class="card">    
+    
+    <div class="card__header">
+      
+      <div class="card__logo-container">
+        <i class="fa-solid fa-ruler-horizontal"></i>
+      </div>
+      
+      <div class="card__header-content">
+        <h1 class="card__title">Room Area Calculator</h1>
+        <p class="card__subtitle">Choose ft² or m² and enter the measurements</p>
+      </div>
+    </div>
+    
+    <div class="card__buttons">
+
+      <label class="card__button" for="feet-radio">Feet</label>
+      <input id="feet-radio" type="radio" name="unit" style="display: none;"> 
+      
+      <label class="card__button" for="meters-radio">Meters</label>
+      <input id="meters-radio" type="radio" name="unit" style="display: none;">
+ 
+    </div>
+  
+    <div class="card__inputs">
+      
+      <label class="card__input-label" for="length-input">LENGTH</label>
+      <input class="card__input" id="length-input" type="number" placeholder="Length">
+      
+      <span class="card__separator" aria-hidden="true">X</span>
+
+      <label class="card__input-label" for="width-input">WIDTH</label>
+      <input class="card__input" id="width-input" type="number" placeholder="Width">
+    
+    </div>
+  
+    <p class="card__error" id="error-message"></p>
+    
+    <div class="card__results-container">
+      
+      <p class="card__results-title">
+        Dimensions of <!-- Javascript pending -->
+      </p>
+      
+      <div class="card__results-contents">
+        
+        <p class="card__result" id="result-feet"></p>  
+        <p class="card__result" id="result-meters"></p>
+
+      </div>
+
+      <label class="card__result-label" for="result-feet">square feet</label>
+      <label class="card__result-label" for="result-meters">square meters</label>
+    
+    </div>
+  
+  </div>
+
 </body>
+
 </html>

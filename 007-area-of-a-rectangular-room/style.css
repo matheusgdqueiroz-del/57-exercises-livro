@@ -1,0 +1,12 @@
+
+:root {
+  --bg:      #EDF0F7;  /* background — page behind the card */
+  --surface: #FFFFFF;  /* surface — card + inputs */
+  --display: #111827;  /* secondary surface — the dark result "screen" + darkest text */
+  --primary: #4F46E5;  /* primary/accent — active toggle, focus ring, icon chip */
+  --text:    #111827;  /* text — main (same ink as the display) */
+  --muted:   #6B7280;  /* muted — labels, captions, units */
+  --border:  #E5E7EB;  /* border — outlines + dividers */
+  --danger:  #EF4444;  /* error — invalid-input border (text uses #B91C1C) */
+}
+
